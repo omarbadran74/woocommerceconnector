@@ -1,0 +1,10 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "main"]
+	vscode-merge-base = upstream/master
+[remote "origin"]
+	url = git@github.com:omarbadran74/woocommerceconnector.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
