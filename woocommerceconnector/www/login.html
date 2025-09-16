@@ -143,6 +143,7 @@
 				{%- endif -%}
 			</form>
 		</div>
+<<<<<<< HEAD
 		{%- if not disable_signup and not disable_user_pass_login -%}
 		<div class="text-center sign-up-message">
 			{{ _("Don't have an account?") }}
@@ -182,6 +183,23 @@
 		</div>
 
 	</section>
+=======
+		
+	</section>
+
+{%- if social_login -%}
+<section class='for-email-login'>
+	{{ logo_section() }}
+	<div class="login-content page-card">
+		<form class="form-signin form-login" role="form">
+			{{ email_login_body() }}
+		</form>
+	</div>
+</section>
+{%- endif -%}
+
+
+>>>>>>> 1480844 (Customize login page and update hooks)
 
 	<section class='for-forgot'>
 		{{ logo_section('Forgot Password') }}
@@ -252,4 +270,8 @@
 
 {% endblock %}
 
+<<<<<<< HEAD
 {% block sidebar %}{% endblock %}
+=======
+{% block sidebar %}{% endblock %}
+>>>>>>> 1480844 (Customize login page and update hooks)
